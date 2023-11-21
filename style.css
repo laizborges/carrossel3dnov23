@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box ;
+    
+}
+
+
+
+
+body {
+    margin: 0;
+    background-color: rgb(185, 207, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1200px;
+    padding-bottom: 25%;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards ;
+
+
+}
+
+.imagem {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+}
+
+
+
+.imagem span {
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+    from {
+       transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+
+    }
+    
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://wcti12.com/resources/media2/16x9/full/1600/center/80/09278092-c272-4f17-981b-4bfad2e1a182-largeScale_AP23192655095378.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2023-05/19/15/asset/172cf4b6f2fe/sub-buzz-454-1684508434-1.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(taylor\ style.webp);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/taylor-swift-performs-onstage-during-the-taylor-swift-the-news-photo-1679862370.jpg?crop=1xw:1xh;center,top&resize=980:*);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://i.insider.com/64159f40718b5300194b02df?width=600&format=jpeg&auto=webp);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://staticg.sportskeeda.com/editor/2023/08/8f2f1-16909827258131-1920.jpg?w=840);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(the\ man\ 2.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(taylor\ lover.webp);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://fashionista.com/.image/t_share/MTk2NjEyNjg5Mjk4OTkwOTEw/taylor-swift-the-eras-tour-reputation-outfit-2023.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+header {
+    text-align: center;
+    background-image: url(the\ eras.jpg);
+
+    padding-top: 10px;
+    padding-bottom: 50px;
+    
+}
+
+
+footer{
+    text-align: center;
+    color: black;
+}
